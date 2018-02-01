@@ -1,15 +1,28 @@
 import argparse
 
 class coin():
-    number_of_sides = 2
+    number_of_sides = 2     # Class variable
 
     def __init__(self, name, value):
         self.name = name
-        self.value = value
+        self.value = float(value)
+
+    # Method
+    def change_value(self, percentage):
+        self.value = self.value + self.value*percentage/100
 
     @classmethod
-    def display_currency_type(cls):
+    def show_number_of_sides(cls):
         print("Coin's number of sides: {}".format(cls.number_of_sides))
+
+    def __repr__(self):
+        unambiguous = "Coin {}, {}, n sides: {}".format(self.name, self.value, self.number_of_sides)
+        return unambiguous
+    
+    def __str__(self):
+        human_readable = "This is an amazing coin named {}, it's value is {} and it has {} side(s)".format(self.name, self.value, self.number_of_sides)
+        return human_readable
+
 
 def parse_command_line():
     parser = argparse.ArgumentParser(description='This appears before usage.' ,epilog="This appears after usage. All arguments starting with a dash are considered optional.")
@@ -27,8 +40,12 @@ def parse_command_line():
 
 
 def main():
-    c = coin("tc", 100)
-    c.display_currency_type()
+    c = coin("tc", 7)
+    c.show_number_of_sides()
+    c.change_value(-50)
+    print c.value
+    print repr(c)
+    print c
 
 
 if __name__ == '__main__':
