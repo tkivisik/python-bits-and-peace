@@ -1,13 +1,14 @@
 import os
 import logging
 import argparse
+import module_one
 
-class coin():
+class Coin():
     number_of_sides = 2     # Class variable
 
     def __init__(self, name, value, test):
         self.name = name
-        self.value = float(value)
+        self.value = value
         self.test = test
 
 
@@ -40,7 +41,6 @@ def parse_command_line():
     parser.add_argument('--test', action='store_true', help="args.test will be set to True")
 
     args = parser.parse_args()
-    print(args.test)
 
     logging.debug('Parsed {}'.format(args))
     return args
@@ -48,23 +48,20 @@ def parse_command_line():
 
 def main():
     logfile_path = os.path.join(os.path.dirname(__file__), "python_bits_and_peace.log")
-
     logging.basicConfig(filename=logfile_path,level=logging.DEBUG, format="%(asctime)s\t%(levelname)s\t%(message)s")
-    logging.info('Some process just started')
+    logging.info('Program started')
 
     args = parse_command_line()
 
-    c = coin(args.name, args.value, args.test)
-    print(c)
-
+    c = Coin(args.name, args.value, args.test)
     c.show_number_of_sides()
     c.change_value(-50)
-    print(c.value)
-    print(repr(c))
-    print(c)
     c.dangerous_function()
 
-    logging.info('Some process just finished')
+    logging.info('Program finished')
+
+    module_one.function_one()
+
 
 if __name__ == '__main__':
     main()

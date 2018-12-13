@@ -1,0 +1,46 @@
+2018-03-02 17:38:28,834	INFO	Some process just started
+2018-03-02 17:38:41,672	INFO	Some process just started
+2018-03-02 17:38:43,966	INFO	Some process just started
+2018-03-02 17:38:43,969	DEBUG	Parsed Namespace(name='1', test=False, value=2.0)
+2018-03-02 17:38:43,969	WARNING	Dangerous function was just run
+2018-03-02 17:38:43,969	INFO	Some process just finished
+2018-03-02 17:42:16,338	INFO	Some process just started
+2018-03-02 17:42:19,091	INFO	Some process just started
+2018-03-02 17:42:19,093	DEBUG	Parsed Namespace(name='1', test=False, value=2.0)
+2018-03-02 17:42:19,093	WARNING	Dangerous function was just run
+2018-03-02 17:42:19,093	INFO	Some process just finished
+2018-03-02 17:46:19,647	INFO	Program started
+2018-03-02 17:46:19,648	DEBUG	Parsed Namespace(name='1', test=False, value=2.0)
+2018-03-02 17:46:19,648	WARNING	Dangerous function was just run
+2018-03-02 17:46:19,648	INFO	Program finished
+2018-03-02 17:47:03,404	INFO	Program started
+2018-03-02 17:47:03,405	DEBUG	Parsed Namespace(name='1', test=False, value=2.0)
+2018-03-02 17:47:03,405	WARNING	Dangerous function was just run
+2018-03-02 17:47:03,405	INFO	Program finished
+2018-03-02 17:47:29,361	INFO	Program started
+2018-03-02 17:47:49,804	INFO	Program started
+2018-03-02 17:48:07,556	INFO	Program started
+2018-03-02 17:49:59,042	INFO	Program started
+2018-03-02 17:49:59,043	DEBUG	Parsed Namespace(name='1', test=False, value=2.0)
+2018-03-02 17:49:59,043	WARNING	Dangerous function was just run
+2018-03-02 17:49:59,043	INFO	Program finished
+2018-03-02 17:50:37,364	INFO	Program started
+2018-03-02 17:50:37,366	DEBUG	Parsed Namespace(name='asdfd', test=False, value=2.0)
+2018-03-02 17:50:37,367	WARNING	Dangerous function was just run
+2018-03-02 17:50:37,367	INFO	Program finished
+2018-03-28 17:21:16,984	INFO	Program started
+2018-03-28 17:21:24,404	INFO	Program started
+2018-03-28 17:21:26,893	INFO	Program started
+2018-03-28 17:21:26,895	DEBUG	Parsed Namespace(name='1', test=False, value=2.0)
+2018-03-28 17:21:26,895	WARNING	Dangerous function was just run
+2018-03-28 17:21:26,895	INFO	Program finished
+2018-03-28 17:25:41,768	INFO	Program started
+2018-03-28 17:25:41,770	DEBUG	Parsed Namespace(name='1', test=False, value=2.0)
+2018-03-28 17:25:41,770	WARNING	Dangerous function was just run
+2018-03-28 17:25:41,770	INFO	Program finished
+2018-03-28 17:26:24,955	INFO	Program started
+2018-03-28 17:26:27,646	INFO	Program started
+2018-03-28 17:26:27,648	DEBUG	Parsed Namespace(name='1', test=False, value=2.0)
+2018-03-28 17:26:27,648	WARNING	Dangerous function was just run
+2018-03-28 17:26:27,648	INFO	Program finished
+2018-03-28 17:26:27,649	INFO	You just used the 'function_one' from the 'module_one' module
